@@ -1,0 +1,19 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+    div.wrapper
+        h1 Add new game 
+        div.form-wrap
+            form(action="/update-cobj" method="post")
+                label(for="name") Name
+                input(type="text" name="name")
+                label(for="description") Description
+                input(type="text" name="Description")
+                label(for="price") Price
+                input(type="text" name="price")
+                button(type="submit") Add new game 
+            a(href="/") Return to the home
